@@ -1,0 +1,10 @@
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+    margin: 0 auto;
+    padding: 10px 40px;
+    max-width: 800px;
+}
