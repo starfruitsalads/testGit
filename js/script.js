@@ -174,15 +174,10 @@ console.log(res * 10);
 
 function someAction(type, number) {
     let name = type.slice(0,3);
-    //let name = type.slice(0,3).map();
     
-    // TODO: продолжаем тут
-    /*
-    if() {
-
+    if(type == "delete") {
+        return number
     }
-    
-     */
 }
 
 const resFromAction = someAction('delete', 20);
