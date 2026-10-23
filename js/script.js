@@ -172,9 +172,22 @@ console.log(res * 10);
 // 736 * 10 = 7360
 
 
+function someAction(type, number) {
+    let name = type.slice(0,3);
+    //let name = type.slice(0,3).map();
+    
+    // TODO: продолжаем тут
+    /*
+    if() {
 
+    }
+    
+     */
+}
 
+const resFromAction = someAction('delete', 20);
 
+console.log(resFromAction)
 
 
 // Самостоятельное обучение - 1:
