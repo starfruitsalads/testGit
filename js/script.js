@@ -173,15 +173,15 @@ console.log(res * 10);
 
 function deletePosts(number) {
     let deletedPosts = 0;
-    for (let i; i < number; i++) {
-
+    for (let i = 0; i < number; i++) {
+        deletedPosts = deletedPosts + 1;
     }
 
     return deletedPosts;
 }
 
 
-console.log("Quantity of delted posts: " + deletePosts(20))
+console.log("Quantity of deleted posts: " + deletePosts(20))
 
 
 
