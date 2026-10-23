@@ -171,10 +171,21 @@ console.log(res * 10);
 // 736 + 10 = 746
 // 736 * 10 = 7360
 
+function deletePosts(number) {
+    let deletedPosts = 0;
+    for (let i = 0; i < number; i++) {
+        deletedPosts = deletedPosts + 1;
+    }
+
+    return deletedPosts;
+}
+
+
+console.log("Quantity of deleted posts: " + deletePosts(20))
 
 function someAction(type, number) {
     let name = type.slice(0,3);
-    
+
     if(type == "delete") {
         return number
     }

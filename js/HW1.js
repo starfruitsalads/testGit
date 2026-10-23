@@ -21,24 +21,8 @@ function bigHello(a, b) {
         console.log("юзера/ов не существует")
     }
 }
-bigHello("Danil", "Maxim");
 
-// тут я хочу сравнивать массивы данных передаваемых через функцию и имеющийся массив "зареганных" пользователей,
-// чтобы здороваться только с пользователями, переданными в функции
-// bigHello('Danil', 'Maxim') // должно выводить в консоли фразу "Привет Danil и Maxim!"
-
-const registration = ["Danil", "Ivan", "Dima", "Danil", "Denis"];
-function bigHello(namesArray) {
-
-    for (let i = 0; i < namesArray.length; i++) {
-        if () {
-            console.log("Привет " + namesArray[i])
-        } else {
-            console.log("для " + namesArray[i]  + " Доступ запрещен, пользователя нет в базе")
-        }
-    }
-}
-bigHello(["Ivan", "Katya"]);
+bigHello("Ivan", "Katya");
 
 
 let userOne = {
