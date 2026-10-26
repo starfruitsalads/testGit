@@ -14,8 +14,6 @@ const name = 'Denis';
 const isAlive = true;
 const isNotAdmin = false;
 
-
-
 // *** Special *** (служебные типы)
 
 // NaN
@@ -48,38 +46,6 @@ const someStrange1 = {
     engine: 1.5,
     isBroken: false
 };
-const someStrange2 = {
-    strokeWidth: 1.5,
-    color: 'green',
-    radiusMM: 140,
-    isFilled: false,
-    freinds: ['Ola', 'Petr']
-};
-const student = {
-    age: 24,
-    country: "Spain",
-    name: "Dmitry",
-    isAlive: true,
-    someHz: someStrange2,
-    myCities: cities
-}
-
-const cities2 = {
-   city1: 'Barcelona',
-   city2: "Moscow",
-   city3: 'Rostov',
-   city100: 'Rostov100',
-};
-
-console.log(cities2.city100)
-const products = {
-   1: 'Apple',
-   2: 'Lemon',
-   3: 'Mellon',
-};
-
-console.log(products)
-
 
 // Function
 
@@ -117,59 +83,6 @@ sum2(a, bb);
 
 
 
-/*
-* Как научиться писать самостоятельно код на JS ("как решать задачи?"):
-1) Самое простое - повторить выученное упражнение(задачу, задание) самостоятельно, желательно не подглядывая. Если подсматриваете, то повторить еще раз, чтобы без подсказок
-2) Чуть сложнее - взять готовое задание из пункта 1 и придумать (да, самостоятельно придумать) усложнение. Сделать дополнительные условия/ограничения, сделать дополнительный функционал и т.д. Всё что угодно, что сделает ваш скрипт более мощным и функциональным
-3) Самое сложное - придумать полностью своё задание и полностью его сделать
-*
-* */
-
-
-// ДЗ - 1:
-// 1) Дописать функцию function bigHello(???)
-// ???
-// }
-
-// bigHello('Danil', 'Maxim') // должно выводить в консоли фразу "Привет Danil и Maxim!"
-
-
-
-
-
-// 2) Дописать функцию, которая будет возвращать результат вычитания. function diff(???) { diff(10,3)
-// function diff(???) {
-// ???
-// }
-// diff(10,3)
-
-function diff(a, b) {
-    console.log('diff start');
-    return a - b;
-    console.log('not showed')
-    // return null;
-}
-
-// Цель: вывести в консоль 
-// 1. Результат диффа + 10 
-// 2. этот же результат диффа * 10
-
-
-
-// Цель: вывести в консоль
-// 1. Результат диффа
-// 2. этот же результат диффа
-
-//
-let res = diff(10, Math.random());
-console.log(res)
-
-console.log(res + 10);
-console.log(res * 10);
-
-// 736
-// 736 + 10 = 746
-// 736 * 10 = 7360
 
 function deletePosts(number) {
     let deletedPosts = 0;
@@ -194,9 +107,3 @@ function someAction(type, number) {
 const resFromAction = someAction('delete', 20);
 
 console.log(resFromAction)
-
-
-// Самостоятельное обучение - 1:
-// 1) Прочитать про Return:
-//     https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/return
-
