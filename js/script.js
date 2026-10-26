@@ -87,14 +87,14 @@ sum2(a, bb);
 function deletePosts(number) {
     let deletedPosts = 0;
     for (let i = 0; i < number; i++) {
-        deletedPosts = deletedPosts + 1;
+        deletedPosts = deletedPosts + 2;
     }
 
     return deletedPosts;
 }
 
 
-console.log("Quantity of deleted posts: " + deletePosts(20))
+console.log("Quantity of deleted posts: " + deletePosts(10))
 
 function someAction(type, number) {
     let name = type.slice(0,3);
