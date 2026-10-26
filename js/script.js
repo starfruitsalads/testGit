@@ -82,20 +82,6 @@ sum2(a, bb);
 *  */
 
 
-
-
-function deletePosts(number) {
-    let deletedPosts = 0;
-    for (let i = 0; i < number; i++) {
-        deletedPosts = deletedPosts + 2;
-    }
-
-    return deletedPosts;
-}
-
-
-console.log("Quantity of deleted posts: " + deletePosts(10))
-
 const posts = [
     {
         "userId": 1,
@@ -156,9 +142,20 @@ const posts = [
         "id": 10,
         "title": "optio molestias id quia eum",
         "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
-    }
+    },
 ]
 
+function deletePosts(number) {
+    let deletedPosts = 0;
+    for (let i = 0; i < number; i++) {
+        deletedPosts = deletedPosts + 2;
+    }
+
+    return deletedPosts;
+}
+
+
+console.log("Quantity of deleted posts: " + deletePosts(10))
 
 function someAction(type, number) {
     let name = type.slice(0,3);
@@ -179,3 +176,12 @@ const resFromAction = someAction('delete', 20);
 const resFromAction2 = someAction('update', 2);
 
 console.log(resFromAction2)
+
+function myNewFn() {
+    return 'I am cool!'
+}
+
+
+console.log(myNewFn());
+
+const MIN_TIME_AGE_MS = 2400;
